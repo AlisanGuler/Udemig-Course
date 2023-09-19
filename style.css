@@ -1,0 +1,809 @@
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(150, 3, 3);
+    --secondary-color: rgb(0, 0, 0);
+}
+
+body .button {
+    padding: 20px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+body .button a {
+    text-decoration: none;
+    color: white;
+}
+
+body .button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .5s;
+}
+
+body span {
+    color: var(--main-color);
+}
+
+/* Header Start */
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header .title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header .title h1 {
+    color: gray;
+}
+
+header .title h1 span {
+    color: var(--main-color);
+}
+
+header .title a {
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+/* Header End */
+
+/* Navbar Start */
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav ul a:hover {
+    color: var(--main-color);
+}
+
+header nav ul a i {
+    color: var(--main-color);
+}
+
+/* Navbar End */
+
+/* Homepage Start */
+section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+}
+
+section .sec-left {
+    flex: 1;
+}
+
+section .sec-left h1 {
+    font-size: 35px;
+    color: grey;
+    margin-bottom: 25px;
+}
+
+section .sec-left h1 span {
+    color: var(--main-color);
+}
+
+section .sec-left p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+section .images {
+    flex: 1;
+    width: 300px;
+}
+
+/* Homepage End */
+
+/* Downpage Start */
+
+.downpage {
+    display: flex;
+    align-items: center;
+    background-color: rgb(48, 137, 145, .55);
+    padding: 15px;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.downpage .p-sec,
+.image-sec {
+    flex: 1;
+}
+
+.downpage .image-sec img {
+    width: 400px;
+}
+
+.downpage .p-sec h1 {
+    text-transform: uppercase;
+    background-color: teal;
+    padding: 20px;
+    width: 50%;
+    position: absolute;
+    top: -20px;
+    border-bottom-right-radius: 60px;
+    color: antiquewhite;
+}
+
+.downpage .p-sec p {
+    color: antiquewhite;
+    font-size: 17px;
+}
+
+.downpage .p-sec .button {
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Downpage End */
+
+/* About Section Start */
+
+/* about pages*/
+.about {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.about div {
+    flex: 1;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.about h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.about p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.about button {
+    margin-top: 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    height: 3rem;
+}
+
+/* about pages end*/
+
+/* Contact pages start*/
+.section-contac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 35px;
+
+}
+
+.section-contac .contact-head h1 {
+    color: gray;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.section-contac .contact-head p {
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    font-style: italic;
+}
+
+form {
+    height: 50vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form .from-contact {
+    margin-bottom: 10px;
+}
+
+.from-contact label {
+    display: block;
+    color: gray;
+    font-weight: bold;
+}
+
+.from-contact input {
+    width: 400px;
+    height: 35px;
+    padding: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+}
+
+form button {
+    padding: 8px 20px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 500ms;
+    width: 7rem;
+}
+
+form button:hover {
+    opacity: .7;
+}
+
+/* About Section End */
+
+/* Course Section Start*/
+.course-sec {
+    margin: 2rem;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.course-sec .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.course-sec .box-container .box {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid beige;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.course-sec .box-container .box:hover img {
+    transform: scale(1.2);
+    transition: ease-in-out .5s;
+}
+
+.course-sec .box-container .box img:hover {
+    cursor: pointer;
+}
+
+.course-sec .box-container .box:hover h2 {
+    transform: translateY(-15px);
+    transition: ease-in-out .5s;
+}
+
+
+.course-sec .box-container .box h2 {
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+
+.course-sec .box-container .box img {
+    height: 100px;
+    width: auto;
+}
+
+.course-sec .box-container .box p {
+    font-size: 17px;
+    transform: translateY(25px);
+}
+
+
+/* Course Section End */
+
+/* Footer Start */
+footer {
+    padding: 20px;
+    margin-top: 100px;
+    border-top: 1px solid var(--main-color);
+}
+
+footer .footer-start {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+}
+
+footer .footer-start .box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-start .box a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+footer .footer-start .box a:hover {
+    color: var(--main-color);
+}
+
+footer .bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid var(--main-color);
+}
+
+/* Footer End */
+
+/* Contact pages start*/
+.section-contac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    padding: 35px;
+
+}
+
+.section-contac .contact-head h1 {
+    color: gray;
+    font-size: 35px;
+    text-align: center;
+
+}
+
+
+
+.section-contac .contact-head p {
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form .from-contact {
+    margin-bottom: 10px;
+}
+
+.from-contact label {
+    display: block;
+    color: gray;
+    font-weight: bold;
+}
+
+.from-contact input {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form button {
+    padding: 8px 20px;
+    border: none;
+    background-color: rgb(48, 137, 145);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+form button:hover {
+    opacity: .7;
+}
+
+/* Contact pages end*/
+
+
+
+/* Media Section Start */
+@media screen and (max-width: 1600px) {
+    .footerx {
+        transform: translateY(10rem);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .footerx {
+        transform: translateY(10rem);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footerx {
+        transform: translateY(10rem);
+    }
+}
+
+@media screen and (max-width: 1900px) {
+    .footerx {
+        transform: translateY(10rem);
+    }
+}
+
+
+@media screen and (max-width: 1055px) {
+    .course-sec {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .course-sec .box-container {
+        font-size: 16px;
+
+    }
+
+    .course-sec .box-container .box {
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .course-sec .box-container .box p {
+        font-size: 14px;
+        width: 100%
+    }
+
+    .course-sec .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+    }
+
+    .footerx {
+        transform: translateY(20rem);
+    }
+}
+
+@media screen and (max-width: 955px) {
+
+
+    .about h1 {
+        font-size: 15px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .about img {
+        width: 350px;
+    }
+
+    .footer-section {
+        height: 150px;
+    }
+
+    .footer-section .footer-head h1 {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .footer-section .footer-head .form {
+        padding: 15px 20px;
+    }
+
+    .course-sec {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .course-sec .box-container {
+        font-size: 16px;
+        
+    }
+
+    .course-sec .box-container .box {
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .course-sec .box-container .box p {
+        font-size: 14px;
+    }
+
+    .course-sec .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+    }
+
+    .footerx {
+        transform: translateY(20rem);
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .head h1 {
+        margin-top: 25px;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .learn-card {
+        justify-content: center;
+    }
+
+    .course-sec {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .course-sec .box-container {
+        font-size: 16px;
+
+    }
+
+    .course-sec .box-container .box {
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .course-sec .box-container .box p {
+        font-size: 14px;
+        width: 100%
+    }
+
+    .course-sec .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+    }
+    .footerx {
+        transform: translateY(20rem);
+    }
+}
+
+
+@media screen and (max-width: 630px) {
+
+
+
+    .nav {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .course-section h1 {
+        font-size: 20px;
+    }
+
+    .course-section p {
+        font-size: 15px;
+    }
+
+    .course-section button {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .container .image img {
+
+        height: 380px;
+    }
+
+    .section .section-two h1 {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .section .section-two p {
+        font-size: 14px;
+        margin-top: 20px;
+
+    }
+
+    .section .section-three img {
+        height: 150px;
+        width: 180px;
+    }
+
+
+    .popular-course h1 {
+        font-size: 20px;
+    }
+
+    .popular-course p {
+        font-size: 13px;
+    }
+
+    .course-container .course-card {
+        padding: 2px;
+    }
+
+    .course-container .course-card img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .course-container .course-card p {
+        margin-bottom: 10px;
+    }
+
+    .course-container .course-card button {
+        font-size: 10px;
+        padding: 2px 5px;
+        bottom: -20px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about h1 {
+        font-size: 15px;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+    .about img {
+        width: 200px;
+    }
+
+    .section-contac .contact-head h1 {
+        font-size: 25px;
+    }
+
+    .section-contac .contact-head p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .section-contac form {
+        padding: 25px;
+    }
+
+    .footer-section {
+        height: 100px;
+    }
+
+    .footer-section .footer-head h1 {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    .footer-section .footer-head .form {
+        padding: 5px 10px;
+        margin-top: 60px;
+    }
+
+    footer .footer-end {
+        font-size: 18px;
+    }
+
+    .footerx {
+        transform: translateY(30rem);
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .course-sec {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .course-sec .box-container {
+        font-size: 16px;
+
+    }
+
+    .course-sec .box-container .box {
+        font-size: 16px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .course-sec .box-container .box p {
+        font-size: 14px;
+        width: 100%
+    }
+
+    .course-sec .box-container {
+        display: grid;
+        grid-template-columns: repeat(1, 6fr);
+    }
+
+    .footerx {
+        transform: translateY(80rem);
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+.footerx {
+    transform: translateY(80rem);
+}
+
+}
+/* Media Section End */
